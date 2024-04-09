@@ -1,0 +1,21 @@
+﻿<Page x:Class="UnitTest.AuthPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UnitTest"
+      mc:Ignorable="d" 
+      d:DesignHeight="100" d:DesignWidth="150"
+      Title="Авторизация">
+
+    <Grid Background="#FF899798">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="11" Margin="2,18,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Width="22" FontSize="7"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Height="9" Margin="0,41,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Width="25" FontSize="7"/>
+
+    </Grid>
+</Page>

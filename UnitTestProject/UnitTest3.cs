@@ -19,7 +19,7 @@ namespace UnitTestProject
             Assert.IsTrue(page.Auth("Galina@gmai.com", "8KC7wJ"));
             Assert.IsTrue(page.Auth("Miron@@gmai,com", "x58OAN"));
             Assert.IsTrue(page.Auth("Vseslava@gmai.com", "fhDSBf"));
-            Assert.IsTrue(page.Auth("Anisa@gmai.com", "Wh4OYm"));
+            Assert.IsTrue(page.Auth("Anisa@gmai.com", "Пароль"));
             Assert.IsTrue(page.Auth("Feafan@@gmai,com", "Kc1PeS"));
         }
 

@@ -5,17 +5,21 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:UnitTest"
       mc:Ignorable="d" 
-      d:DesignHeight="100" d:DesignWidth="150"
+      d:DesignHeight="300" d:DesignWidth="400"
       Title="Авторизация">
 
-    <Grid Background="#FF899798">
+    <Grid Background="#FF988E8E">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="10"/>
-            <ColumnDefinition Width="30"/>
-            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="34"/>
+            <ColumnDefinition Width="132"/>
+            <ColumnDefinition Width="134"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="11" Margin="2,18,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Width="22" FontSize="7"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Height="9" Margin="0,41,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Width="25" FontSize="7"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="58" Margin="0,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="28"><Run Language="ru-ru" Text="Логин"/></TextBlock>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Height="64" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Width="116" FontSize="28" Margin="0,111,0,0"/>
+        <TextBox x:Name="TextBoxLogin" Grid.Column="2" Height="38" Margin="0,45,-58,0" TextWrapping="Wrap" Text="Логин или почта" VerticalAlignment="Top" FontSize="20" BorderBrush="#FF284EC2"/>
+        <TextBox x:Name="TextBoxPassword" Grid.Column="2" Height="38" Margin="0,112,-58,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" FontSize="20"/>
+        <Button x:Name="ButtonEnter" Grid.Column="2" Content="Вход" HorizontalAlignment="Left" Height="28" Margin="0,200,0,0" VerticalAlignment="Top" Width="115" Click="ButtonEnter_Click"/>
+        <Button x:Name="ButtonReg" Grid.Column="2" Content="Регистрация" HorizontalAlignment="Left" Height="28" Margin="0,245,0,0" VerticalAlignment="Top" Width="115" Click="ButtonReg_Click"/>
 
     </Grid>
 </Page>

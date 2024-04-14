@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UnitTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="100" Width="150" WindowStartupLocation="CenterScreen">
+        Title="" Height="360" Width="400" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="13*"/>
             <ColumnDefinition Width="12*"/>
         </Grid.ColumnDefinitions>
-        <Frame Source="AuthPage.xaml" Grid.ColumnSpan="2">
+        <Frame Source="AuthPage.xaml" Grid.ColumnSpan="2" >
         </Frame>
     </Grid>
 </Window>

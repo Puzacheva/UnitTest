@@ -1,0 +1,16 @@
+﻿<Window x:Class="UnitTest.CaptchaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UnitTest"
+        mc:Ignorable="d"
+        Title="Капча" Height="250" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox Name="TextBoxCaptcha" HorizontalAlignment="Left" Height="30" Margin="55,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="181"/>
+        <Button Name="ButtonCaptcha" Content="Показать символы" HorizontalAlignment="Left" Height="22" Margin="88,80,0,0" VerticalAlignment="Top" Width="114" Click="ButtonCaptcha_Click"/>
+        <TextBox Name="TextBoxEnterCap" HorizontalAlignment="Left" Height="22" Margin="55,142,0,0" TextWrapping="Wrap" Text="Введите капчу" VerticalAlignment="Top" Width="181"/>
+        <Button Name="ButtonOK" Content="OK" HorizontalAlignment="Left" Height="26" Margin="126,183,0,0" VerticalAlignment="Top" Width="38" Click="ButtonOK_Click"/>
+
+    </Grid>
+</Window>

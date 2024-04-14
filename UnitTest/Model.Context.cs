@@ -13,22 +13,22 @@ namespace UnitTest
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities : DbContext
+    public partial class Entities2 : DbContext
     {
-        private static Entities _context;
-        
-        public Entities()
-            : base("name=Entities")
+        private static Entities2 _context;
+
+        public Entities2()
+            : base("name=Entities2")
         {
         }
 
-        public static Entities GetContext()
+        public static Entities2 GetContext()
         {
             if (_context == null)
-                _context = new Entities();
+                _context = new Entities2();
             return _context;
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

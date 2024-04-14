@@ -47,7 +47,7 @@ namespace UnitTest
                 return false;
             }
 
-            using (var db = new Entities())
+            using (var db = new Entities2())
             {
                 var user = db.User
                     .AsNoTracking()

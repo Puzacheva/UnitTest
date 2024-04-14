@@ -5,25 +5,29 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:UnitTest"
       mc:Ignorable="d" 
-      d:DesignHeight="340" d:DesignWidth="400"
+      d:DesignHeight="390" d:DesignWidth="400"
       Title="RegPage">
 
-    <Grid Background="#FF988E8E">
-        <TextBox Name="FIO" HorizontalAlignment="Left" Height="25" Margin="38,18,0,0" TextWrapping="Wrap" Text="ФИО" VerticalAlignment="Top" Width="122"/>
-        <TextBox Name="Login" HorizontalAlignment="Left" Height="25" Margin="38,48,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Width="122"/>
-        <TextBox Name="Password" HorizontalAlignment="Left" Height="25" Margin="38,78,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Width="122"/>
-        <RadioButton Name="W" Content="Женский" HorizontalAlignment="Left" Height="20" Margin="71,114,0,0" VerticalAlignment="Top" Width="102"/>
-        <RadioButton Name="M" Content="Мужской" HorizontalAlignment="Left" Height="21" Margin="160,114,0,0" VerticalAlignment="Top" Width="102"/>
-        <Label Content="Пол" HorizontalAlignment="Left" Height="26" Margin="38,108,0,0" VerticalAlignment="Top" Width="33"/>
-        <ComboBox Name="Role" HorizontalAlignment="Left" Height="38" Margin="38,139,0,0" VerticalAlignment="Top" Width="122">
+    <Grid Background="#FF878E92">
+        <TextBox Name="FIO" HorizontalAlignment="Left" Height="28" Margin="38,27,0,0" TextWrapping="Wrap" Text="ФИО" VerticalAlignment="Top" Width="162" FontSize="14" IsUndoEnabled="False" FontWeight="UltraLight" Background="{x:Null}"/>
+        <TextBox Name="Login" HorizontalAlignment="Left" Height="28" Margin="38,60,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Width="162" FontWeight="UltraLight" FontSize="14" Background="{x:Null}"/>
+        <TextBox Name="Password" HorizontalAlignment="Left" Height="28" Margin="38,95,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Width="162" FontWeight="UltraLight" FontSize="14" Background="{x:Null}"/>
+        <RadioButton Name="W" Content="Женский" HorizontalAlignment="Left" Height="20" Margin="83,136,0,0" VerticalAlignment="Top" Width="102" FontSize="13"/>
+        <RadioButton Name="M" Content="Мужской" HorizontalAlignment="Left" Height="20" Margin="166,136,0,0" VerticalAlignment="Top" Width="102" FontSize="13"/>
+        <Label Content="Пол" HorizontalAlignment="Left" Height="26" Margin="38,129,0,0" VerticalAlignment="Top" Width="40" FontSize="14"/>
+        <ComboBox Name="ComboBoxRole" HorizontalAlignment="Left" Height="38" Margin="38,161,0,0" VerticalAlignment="Top" Width="122" Background="{x:Null}" BorderBrush="{x:Null}" SelectionChanged="ComboBoxRole_SelectionChanged">
             <ComboBoxItem Content="Администратор"/>
             <ComboBoxItem Content="Менеджер A"/>
             <ComboBoxItem Content="Менеджер C"/>
         </ComboBox>
-        <TextBox Name="Tel" HorizontalAlignment="Left" Height="24" Margin="38,182,0,0" TextWrapping="Wrap" Text="Номер телефона" VerticalAlignment="Top" Width="114"/>
+        <TextBox Name="Tel" HorizontalAlignment="Left" Height="28
+                 " Margin="38,206,0,0" TextWrapping="Wrap" Text="Номер телефона" VerticalAlignment="Top" Width="162" TextChanged="Tel_TextChanged" FontSize="14" FontWeight="UltraLight" Background="{x:Null}"/>
         <Image HorizontalAlignment="Left" Height="26" Margin="38,235,0,0" VerticalAlignment="Top" Width="57"/>
-        <Button Name="ButtonReg" Content="Регистрация" HorizontalAlignment="Left" Height="31" Margin="75,283,0,0" VerticalAlignment="Top" Width="102" Click="ButtonReg_Click"/>
-        <Button Name="ButtonCancel" Content="Отмена" HorizontalAlignment="Left" Height="31" Margin="200,283,0,0" VerticalAlignment="Top" Width="102" IsCancel="True" Click="ButtonCancel_Click"/>
+        <Button Name="ButtonReg" Content="Регистрация" HorizontalAlignment="Left" Height="31" Margin="74,291,0,0" VerticalAlignment="Top" Width="126" Click="ButtonReg_Click" FontSize="16"/>
+        <Button Name="ButtonCancel" Content="Отмена" HorizontalAlignment="Left" Height="31" Margin="217,291,0,0" VerticalAlignment="Top" Width="116" IsCancel="True" Click="ButtonCancel_Click" FontSize="16"/>
+        <TextBox x:Name="Foto" HorizontalAlignment="Left" Height="39" Margin="38,240,0,0" TextWrapping="Wrap" Text="Фото (SRC- или URL- адрес)" VerticalAlignment="Top" Width="162" FontWeight="UltraLight" FontSize="14" Background="{x:Null}"/>
+        <Label Name="LabelRole" Content="Роль
+               " HorizontalAlignment="Left" Height="26" Margin="74,166,0,0" VerticalAlignment="Top" Width="50" FontSize="14" Background="{x:Null}"/>
 
     </Grid>
 </Page>
